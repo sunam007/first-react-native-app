@@ -8,7 +8,8 @@ const AppText = ({ children }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 18,
-    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir", //case sensitive
+    // "android" or "ios" case sensitive , all small letters
+    fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
   },
 });
 
