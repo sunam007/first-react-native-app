@@ -1,13 +1,15 @@
-import { StatusBar } from "expo-status-bar";
 import { View } from "react-native";
-import ViewImageScreen from "./app/screen/ViewImageScreen";
-import WelcomeScreen from "./app/screen/WelcomeScreen";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import AppText from "./app/components/AppText";
-import colors from "./app/config/colors";
-import AppButton from "./app/components/AppButton";
+import Card from "./app/components/Card";
 
 export default function App() {
-  return <WelcomeScreen />;
+  return (
+    <View style={{ backgroundColor: "#f8f4f4", padding: 20, paddingTop: 100 }}>
+      <Card
+        title={"Red Jacket for sale"}
+        subTitle={"$100"}
+        image={require("./app/assets/jacket.jpg")}
+      />
+    </View>
+  );
 }
